@@ -4,16 +4,83 @@
 <head>
   <meta charset="UTF-8">
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title> TEAM RON </title>
+  <title> Tech Army </title>
   
   <script src="js/jquery.min.js"></script>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
 
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/slideshow.css">
 
   
 </head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+* { box-sizing: border-box; }
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+  background: black;
+}
+
+/* STRUCTURE */
+
+.wrapper {
+	padding: 5px;
+	max-width: 960px;
+	width: 95%;
+	margin: 20px auto;
+}
+header {
+	padding: 0 15px;
+}
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.column {
+	flex: 1;
+	border: 1px solid gray;
+	margin: 2px;
+	padding: 10px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+	
+}
+
+footer {
+	padding: 0 15px;
+}
+
+
+@media screen and (max-width: 980px) {
+  .columns .column {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+
+</style>
 <body>
 
   <nav class="ment">
@@ -72,10 +139,10 @@
 	
 	<!-- Section Starts Here -->
 	<div class="header" id="home"> 
-	<h1> Phantom of the Opera </h1>
+	<img src="image\banner.jpg" style="width:100%;"></img>
 	</div>
 
-	<div id="content" style="background: ; padding: 500px 0;">
+	<div id="content" style="background: ; padding: 5px 0;">
 	
 	
 
@@ -97,8 +164,70 @@
 	<h1> Group Members </h1>
 	</div>
 
-	<div id="content" style="background: ; padding: 500px 0;">
+	<div id="content" style="background: ; padding: 0 0;">
 	
+		<section> 
+			<div class="rt-container">
+				<div class="col-rt-12">
+		  <!-- Slider -->
+				  <div id="slider" style="width:70%; margin: auto !important;">
+					<div class="slides">
+					  <div class="slider">
+						<div class="legend"></div>
+						<div class="content">
+						  <div class="content-txt">
+							<h2>Lorem ipsum dolor</h2>
+							<p>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</p>
+						  </div>
+						</div>
+						<div class="image"> <img src="image/1.jpg"> </div>
+					  </div>
+					  <div class="slider">
+						<div class="legend"></div>
+						<div class="content">
+						  <div class="content-txt">
+							<h2>Lorem ipsum dolor</h2>
+							<p>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</p>
+						  </div>
+						</div>
+						<div class="image"> <img src="image/2.jpg"> </div>
+					  </div>
+					  <div class="slider">
+						<div class="legend"></div>
+						<div class="content">
+						  <div class="content-txt">
+							<h2>Lorem ipsum dolor</h2>
+							<p>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</p>
+						  </div>
+						</div>
+						<div class="image"> <img src="image/3.jpg"> </div>
+					  </div>
+					  <div class="slider">
+						<div class="legend"></div>
+						<div class="content">
+						  <div class="content-txt">
+							<h2>Lorem ipsum dolor</h2>
+							<p>Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh.</p>
+						  </div>
+						</div>
+						<div class="image"> <img src="image/4.jpg"> </div>
+					  </div>
+					</div>
+					<div class="switch">
+					  <ul>
+						<li>
+						  <div class="on"></div>
+						</li>
+						<li></li>
+						<li></li>
+						<li></li>
+					  </ul>
+					</div>
+				  </div>
+				 </div> 
+			 </div>          
+		</section>
+
 	</div>
 	
 	<!-- Section Starts Here -->
@@ -106,8 +235,26 @@
 	<h1> Announcements </h1>
 	</div>
 
-	<div id="content" style="background: ; padding: 500px 0;">
-
+	<div id="content" style="background: ; padding: 50px 0;">
+		
+	<section class="columns">
+		
+		<div class="column">
+			<h2>Work anniversaries</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae?</p>
+		</div>
+		
+		<div class="column">
+			<h2>Save the dates</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae? Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum.</p>
+		</div>
+	  
+	  <div class="column">
+			<h2>Workplace safety tips</h2>
+			<p>Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto cum praesentium voluptatibus recusandae?</p>
+		</div>
+		
+	</section>	
 
 	</div>
 	
